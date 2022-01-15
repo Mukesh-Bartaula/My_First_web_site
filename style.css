@@ -1,0 +1,114 @@
+*{
+	margin: 0px;
+	padding: 0px; 
+}
+.container{
+	background-color: rgb(244, 248, 249);
+	height: 100vh;
+}
+.headbar{
+	display: flex;
+	justify-content: space-between;
+	height: 15vh;
+	width: 100vw;
+}
+.logo > img{
+	height: 14vh;
+}
+.log_in{
+	padding:5px 6px;
+	margin left: 20px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-right: 30px;
+	background-color: rgb(29, 74, 209);
+	border-radius:15px;	
+	padding: auto;
+	width: 75px;
+	height:4vh;
+}
+
+.log_in:hover{
+	background-color:rgb(26, 14, 160);
+	color:white;
+}
+.log_in{
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+}
+.navbar{
+	height: 10vh;
+	background-color: blue;
+	display: flex;
+	width: 100vw;
+	position: sticky;
+	top:0px;
+}
+.navbar > ul{
+	list-style-type: none;
+	display: flex;
+	flex-flow: row;
+	height: 10vh;
+	padding-left: 60px;
+
+}
+.nav_but{
+	display: flex;
+	margin:20px 20px;
+	text-decoration: none;
+	text-align: center;	
+	color: white;
+	padding:auto;
+}
+ .navbar > ul > li{
+ 	height:10vh;
+ 	text-align: center;
+ 	font-weight: bolder;
+}
+		
+.navbar > ul > li:hover{
+	background-color: rgb(26, 14, 160);
+	font-weight: bolder;
+	box-shadow: 5px 2px 10px 0 .1px rgba(0, 0, 0, 0.41);
+}
+
+.home-text {
+	margin-left: 10px;
+	
+}
+.home_icon{
+	margin-left: 20px;
+}
+.home_img{
+	width: 100vw;
+	overflow: hidden;
+	
+}
+.home_img > img{
+	width:100%;
+	height:50vh;
+}
+.h_pragraph{
+	padding: 20px 40px;
+
+}
+
+#footer{
+	height: 40vh;
+	width: 100vW;
+	background-color: black;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	position: relative;
+	bottom:0px;
+	left: 0px;
+	right: 0px;
+}
+#footer > div{
+	color:white;
+	padding:30px;
+}
