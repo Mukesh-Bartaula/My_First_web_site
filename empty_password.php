@@ -27,11 +27,16 @@
 					<!-- <label class="name">Username : </label><br> -->
 					<input type="text" name="username" id="username" placeholder="Enter Username" >
 					
+					
+
 					<!-- <label class="name">Password : </label><br> -->
 					<div class="password">
 						<span style="font-size: 20px; background-color: white; position: absolute;margin-top: 5px; margin-left: 225px;"> 
 								<i class="far fa-eye-slash" onclick="showPassword()"></i></span>
 						<input type="password" name="password" id="password" placeholder="Enter Password">
+						<p style="color: red; font-size:13px;position: absolute;  top: 35px;">
+							Please fill  password.
+						</p>
 						
 					</div>
 					<div style="text-align: center;">

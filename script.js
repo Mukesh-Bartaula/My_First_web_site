@@ -22,3 +22,27 @@ function showPassword(){
     x.type = "password";
   }	
 }
+
+    //slider js
+var i = 1 ;
+var img = [];
+var time = 4000;
+img[1] = "./img/ps-11.webp";
+img[2] = "./img/ps-2.webp";
+img[3] = "./img/ps-3.webp";
+img[4] = "./img/ps-1.webp";
+ 
+function changeImg(){
+	document.img_slider.src = img[i];
+
+	if(i < img.length-1){
+		i++;
+	}
+	else{
+		i = 1;
+	}
+	setTimeout("changeImg()", time);
+	 
+}
+window.onload = changeImg;
+

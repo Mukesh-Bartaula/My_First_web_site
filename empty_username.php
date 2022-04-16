@@ -26,7 +26,9 @@
 				<div class="login_body">
 					<!-- <label class="name">Username : </label><br> -->
 					<input type="text" name="username" id="username" placeholder="Enter Username" >
-					
+					<p style="color: red; font-size:13px; position: absolute; top: 130px;">
+						Please fill  Username.
+					</p>
 					<!-- <label class="name">Password : </label><br> -->
 					<div class="password">
 						<span style="font-size: 20px; background-color: white; position: absolute;margin-top: 5px; margin-left: 225px;"> 
