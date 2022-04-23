@@ -31,7 +31,7 @@
           <li><a href="#" class="nav_but">FACULTY</a></li>
           <li><a href="#" class="nav_but active">ADMISSION</a></li>
           <li><a href="./news.html" class="nav_but">NEWS & EVENT</a></li>
-          <li><a href="#" class="nav_but">PROGRAMMES</a></li>
+          <li><a href="#" class="nav_but">ATTENDANCE</a></li>
           <li><a href="./contact.html" class="nav_but">CONTACT</a></li>
         </ul>
       </div>
@@ -48,6 +48,7 @@
               <label style="border-radius: 10px; background-color: #F8FAFD; padding: 12px 56px; color: dimgray">Add photo
                 <input type="file" name="upload_file" class="form-control" id="upload_file"
                        style="display: none" onchange="getImagePreview(event)">
+                <div class="image-error" style="display: none;"></div>
               </label>
 
             </div>
@@ -160,13 +161,20 @@
       <script type="text/javascript">
         function getImagePreview(event)
         {
-          var image=URL.createObjectURL(event.target.files[0]);
-          var imagediv= document.getElementById('preview');
-          var newimg=document.createElement('img');
-          imagediv.innerHTML='';
-          newimg.src=image;
-          newimg.width="180";
-          imagediv.appendChild(newimg);
+          let filename = event.target.files[0].name;
+          if (filename.endsWith('.jpg') || filename.endsWith('.png') || filename.endsWith('.jpeg')) {
+            var image=URL.createObjectURL(event.target.files[0]);
+            var imagediv= document.getElementById('preview');
+            var newimg=document.createElement('img');
+            imagediv.innerHTML='';
+            newimg.src=image;
+            newimg.width="180";
+            imagediv.appendChild(newimg);
+          } else {
+            var imageErrorDiv = document.getElementsByClassName('image-error')
+            imageErrorDiv.innerHTML = "Invalid"
+          }
+
         }
       </script>
 </body>

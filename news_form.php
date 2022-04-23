@@ -26,8 +26,8 @@
             </a>
         </li>
         <li><a href="#" class="nav_but">FACULTY</a></li>
-        <li><a href="#" class="nav_but active">ADMISSION</a></li>
-        <li><a href="./news.html" class="nav_but">NEWS & EVENT</a></li>
+        <li><a href="#" class="nav_but">ADMISSION</a></li>
+        <li><a href="./news.html" class="nav_but active">NEWS & EVENT</a></li>
         <li><a href="#" class="nav_but">PROGRAMMES</a></li>
         <li><a href="./contact.html" class="nav_but">CONTACT</a></li>
     </ul>

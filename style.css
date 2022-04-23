@@ -1,6 +1,6 @@
 *{
-	margin: 0px;
-	padding: 0px; 
+	margin: 0;
+	padding: 0;
 	
 
 }
@@ -21,8 +21,8 @@ ul{
 
 
 *{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 .login_page_container{
 	background-image: url(./img/bgLogIn.jpg);
@@ -49,7 +49,7 @@ ul{
 .imgProfile .logo img{
 	z-index: 1;
 	position: absolute;
-	left: 34x;
+	left: 34px;
 	top: 45px;
 	width: 170px;
 	height: 45px;
@@ -86,12 +86,12 @@ ul{
 
 .login_body input{
 	text-indent: 10px;
-	padding: 5px 0px ;
+	padding: 5px 0 ;
 	margin-bottom: 40px;
 }
 .password input{
 	text-indent: 10px;
-	padding: 5px 0px ;
+	padding: 5px 0 ;
 	margin-bottom: 40px;
 }
 .login_body  input[type='text'], input[type='password']{
@@ -187,10 +187,9 @@ ul{
 	display: flex;
 	width: 100%;
 	position: sticky;
-	top:0px;
-	z-index: 1;	
+	top: 0;
+	z-index: 1;
 	align-items: center;
-	
 }
 .navbar > ul{
 	list-style-type: none;
@@ -231,7 +230,7 @@ li a{
 .navbar > ul > li:hover{
 	background-color: rgb(26, 14, 160);
 	font-weight: bolder;
-	box-shadow: 5px 2px 10px 0 .1px rgba(0, 0, 0, 0.41);
+	box-shadow: 5px 2px 10px 1px rgba(0, 0, 0, 0.41);
 }
 
 .home-text {
@@ -241,7 +240,21 @@ li a{
 .home_icon{
 	margin-left: 20px;
 }
-            
+   		/*dropdown-menu         */
+
+.faculty_dropdown-menu{
+	display: none;
+	z-index: 1;
+}
+.navbar ul li:hover .faculty_dropdown-menu ul{
+	display: block;
+	position: absolute;
+	background-color: blue;
+	color: white;
+	margin-top: 50px;
+	visibility: visible;
+
+}
            /*body*/
 /*.container{
 	background-image: url(./img/drone_short.jpg);
@@ -302,9 +315,9 @@ li a{
 	justify-content: space-between;
 	background-color: #232B2B;
 	position: relative;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	flex-wrap: wrap;
 }
 .footer_body{
@@ -372,7 +385,7 @@ li a{
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	padding: 100px 0px;
+	padding: 100px 0;
 	min-height: 40%;
 	box-sizing: border-box;
 }
@@ -496,7 +509,7 @@ table{
 }
 .contact_info_body p{
 	display: inline-block;
-	padding: 10px 0px;
+	padding: 10px 0;
 	font-weight: bolder;
 	font-size: 25px;
 	font-family: 'Ubuntu', sans-serif;
@@ -579,7 +592,7 @@ table{
 
 .newsContainer{
 	min-height: 100vh;
-	max-height: auto;
+	max-height: 100%;
 }
 .newsBody{
 	/*display: flex;*/
@@ -665,4 +678,196 @@ table{
 .newsDetailParagraph p{
 	line-height: 22px;
 	text-indent: 20px;
+}
+
+		/*attedance*/
+
+.attContainer{
+	min-height: 100vh;
+	max-height: 100%;
+}
+.attBody{
+	/*display: flex;*/
+	padding: 50px 130px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.att_card_container{
+
+	display: inline-block;
+	height: 350px;
+	width: 300px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 25px;
+	background-color: dodgerblue;
+	overflow: hidden;
+
+}
+.att_card_container:hover{
+	box-shadow: 1px 1px 20px blue;
+}
+.att_card_container .attParagraph .heading{
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	overflow: hidden;
+
+}
+.att_card_container img{
+	height: 300px;
+	width: 100%;
+	border: 1px solid gray;
+}
+.att_card_container hr{
+	margin: 10px 0;
+
+}
+.att_card_container .attParagraph{
+
+	text-align: justify;
+	overflow: hidden;
+	height: 40px;
+}
+.att_card_container .attParagraph h1{
+	overflow: hidden;
+	text-align: center;
+}
+
+	/*daillyatt*/
+
+.att_container{
+	min-height: 100vh;
+	max-height: 100%;
+}
+.buttondiv{
+	display: flex;
+	justify-content: space-between;
+}
+.dailyAtt_date input{
+	width: 40px;
+	display: inline-block;
+
+}
+.dailyAtt_table{
+	margin: auto;
+	margin-top: 5%;
+	width: 70%;
+
+}
+.dailyAtt_button button{
+	width: 120px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: lightgray;
+	display: inline-block;
+	float: right;
+	margin: 0;
+	padding: 0;
+	font-size: 25px;
+}
+.dailyatt_submit{
+	display: inline-block;
+
+}
+.dailyAtt_month {
+	display: flex;
+	justify-content: space-between;
+}
+.dailyAtt_month label, input{
+	display: inline-block;
+}
+.dailyatt_submit input{
+	/*width: 40px;*/
+	width: 120px;
+	height: 50px;
+	margin: 30px;
+	padding: 10px 60px;
+	display: inline-block;
+	text-align: center;
+}
+.backbutton  button{
+	width: 120px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: lightgray;
+	margin-top: 50%;
+	margin-left: 50%;
+	font-size: 25px;
+
+}
+.backbutton button:hover{
+	box-shadow: 3px 3px 20px dimgray;
+
+}
+.dailyAtt_button button{
+	width: 120px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: lightgray;
+	font-size: 25px;
+	margin-top: 50%;
+	margin-left: 50%;
+}
+
+		/*vnavbar*/
+.vnavbar{
+	height: auto;
+	background-color: blue;
+	display: flex;
+	width: 20%;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	/*z-index: 1;	*/
+	/*align-items: center;*/
+
+}
+.vnavbar > ul{
+	list-style-type: none;
+	display: flex;
+	flex-flow: column;
+	/*padding-left: 20px;*/
+	width: 100%;
+
+}
+.vnavbar ul li{
+	width: 100%;
+}
+.vnav_but{
+	display: block;
+	padding:20px 0px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+li a{
+	width: 100%;
+	display: block;
+	font-weight: bolder;
+}
+
+.vnavbar > ul > li > a:active{
+	background-color: rgb(18, 5, 66);
+
+}
+.vnavbar ul li a.active{
+	background-color: darkblue;
+}
+
+.vnavbar > ul > li:hover{
+	background-color: rgb(26, 14, 160);
+	font-weight: bolder;
+	box-shadow: 5px 2px 10px  1px rgba(0, 0, 0, 0.41);
+}
+
+.vhome-text {
+	margin-left: 5px;
+
+}
+.vhome_icon{
+	margin-left: 20px;
 }
