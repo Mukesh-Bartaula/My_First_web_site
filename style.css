@@ -185,11 +185,11 @@ ul{
 	height: 10vh;
 	background-color: blue;
 	display: flex;
-	width: 100%;
 	position: sticky;
 	top: 0;
 	z-index: 1;
 	align-items: center;
+
 }
 .navbar > ul{
 	list-style-type: none;
@@ -242,19 +242,19 @@ li a{
 }
    		/*dropdown-menu         */
 
-.faculty_dropdown-menu{
-	display: none;
-	z-index: 1;
-}
-.navbar ul li:hover .faculty_dropdown-menu ul{
-	display: block;
-	position: absolute;
-	background-color: blue;
-	color: white;
-	margin-top: 50px;
-	visibility: visible;
+/*.faculty_dropdown-menu{*/
+/*	display: none;*/
+/*	*/
+/*}*/
+/*.navbar ul li:hover .faculty_dropdown-menu ul{*/
+/*	display: block;*/
+/*	position: absolute;*/
+/*	background-color: blue;*/
+/*	color: white;*/
+/*	margin-top: 50px;*/
+/*	visibility: visible;*/
 
-}
+/*}*/
            /*body*/
 /*.container{
 	background-image: url(./img/drone_short.jpg);

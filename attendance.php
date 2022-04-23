@@ -29,13 +29,6 @@
                 </a>
             </li>
             <li><a  class="nav_but">FACULTY</a></li>
-            <div class="faculty_dropdown-menu">
-                <ul>
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">Commerce</a></li>
-                    <li><a href="#">Hotel managemnt</a></li>
-                </ul>
-            </div>
             <li><a href="./form.html" class="nav_but">ADMISSION</a></li>
             <li><a href="./news.html" class="nav_but">NEWS & EVENT</a></li>
             <li><a href="./attendance.php" class="nav_but active    ">ATTENDANCE</a></li>
