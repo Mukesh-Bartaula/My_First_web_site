@@ -31,7 +31,7 @@
             <li><a  class="nav_but">FACULTY</a></li>
             <li><a href="./form.html" class="nav_but">ADMISSION</a></li>
             <li><a href="./news.html" class="nav_but">NEWS & EVENT</a></li>
-            <li><a href="./attendance.php" class="nav_but active    ">ATTENDANCE</a></li>
+            <li><a href="./attendance.php" class="nav_but active ">ATTENDANCE</a></li>
             <li><a href="./contact.html" class="nav_but">CONTACT</a></li>
         </ul>
     </div>
