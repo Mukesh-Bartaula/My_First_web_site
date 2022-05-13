@@ -8,7 +8,7 @@ function checkValidation() {
 	 let errorMessage = ""
 	if(!password){
 		errorMessage = "Password cann't be empty."
-	 } else if (passwordSize <= 6) {
+	 } else if (passwordSize <= 5) {
 		
 		 errorMessage = "Password must be atleast 6 character."
 	}

@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -28,7 +30,7 @@
         <li><a href="#" class="nav_but">FACULTY</a></li>
         <li><a href="#" class="nav_but">ADMISSION</a></li>
         <li><a href="./news.html" class="nav_but active">NEWS & EVENT</a></li>
-        <li><a href="#" class="nav_but">PROGRAMMES</a></li>
+        <li><a href="./attendenceF/attendance.php" class="nav_but">ATTENDENCE</a></li>
         <li><a href="./contact.html" class="nav_but">CONTACT</a></li>
     </ul>
 </div>
@@ -78,21 +80,21 @@
             </form>
         </div>
     </div>
-    <footer>
-
-        <div id="footer">
-            <div class="footer_body">
-                <div class="column_1">
-                    <h2>Contact</h2>
+</div>
+<footer>
+    <div id="footer">
+        <div class="footer_body">
+            <div class="column_1">
+                <h2>Contact</h2>
                     <ul>
                         <li>Hetauda School Of Management</li>
                         <li>Hetauda-4, Makwanpur</li>
                         <li>ph no: 057524701, 057524711, 057524765</li>
                         <li>Emali: hsm@gmail.com</li>
                     </ul>
-                </div> <hr>
-                <div class="column_2">
-                    <h2>Useful links</h2>
+            </div> <hr>
+            <div class="column_2">
+                 <h2>Useful links</h2>
                     <ul>
                         <li><a href="./index.html"> HOME </a> </li>
                         <li><a href="#">FACULTY</a></li>
@@ -101,31 +103,31 @@
                         <li><a href="#">PROGRAMMES</a></li>
                         <li><a href="./contact.html" >CONTACT</a></li>
                     </ul>
-                </div> <hr>
-                <div class="column_3">
-                    <h2>About Us</h2>
+            </div> <hr>
+            <div class="column_3">
+                <h2>About Us</h2>
                     <ul>
                         <li> <a href="#"> Privacy policy </a></li>
                         <li><a href="#">Term & condition</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>  <hr>
-                <div class="footer_icon">
-                    <a href="https://www.facebook.com/groups2HSM.forall/">
+            </div>  <hr>
+            <div class="footer_icon">
+                <a href="https://www.facebook.com/groups2HSM.forall/">
                         <i class="fab fa-facebook fa-3x" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.instagram.com/hsm.edu.np/">
-                        <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
-                    </a>
-                    <a href="#">
+                </a>
+                <a href="https://www.instagram.com/hsm.edu.np/">
+                   <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="#">
                         <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
-                    </a>
+                </a>
 
-                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-</div>
+
 </body>
 </html>
