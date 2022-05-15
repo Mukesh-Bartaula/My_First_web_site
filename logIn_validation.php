@@ -1,5 +1,6 @@
 
 <?php
+	session_start();
 	$username = $_POST['username'];
 	$password = $_POST['password'] ;
 	if (isset($_POST['login_but'])) {	
@@ -14,6 +15,7 @@
 			header("location:empty_password.php");
 		}
 		else{
+
 			include "db.php";
 			$username  = $_POST['username'];
 			$password = $_POST['password'];
@@ -21,7 +23,12 @@
 			$query = mysqli_query($conn, $sql);
 			$count_rows =mysqli_num_rows($query);
 			if($count_rows > 0){
-				header("location:index.html");
+				if(isset($_POST['remember_me'])){
+					$_SESSION['username']=$username;
+					$_SESSION['password']=$password;
+					header("location:homepage.php");
+				}
+				header("location:homepage.php");
 			}
 			else{
 				header("location:./login_invalide.php");

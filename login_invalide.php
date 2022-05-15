@@ -15,7 +15,7 @@
         <div class="login_container">
             <div class="imgProfile">
                 <div class="logo">
-                    <a href="./index.html"><img src="./img/logo.png"></a>
+                    <a href="homepage.php"><img src="./img/logo.png"></a>
                 </div>
                 <img src="./img/profile.png">
             </div><hr>

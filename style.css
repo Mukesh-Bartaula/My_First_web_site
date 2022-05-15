@@ -5,6 +5,7 @@
 	
 
 }
+
 .container{
 	background-color:#F5F5F5;
 	overflow-x: hidden;
@@ -127,8 +128,8 @@ ul{
 	height: 5vh;
 	color:  rgb(32, 46, 104);
 	font-weight: bolder;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 .button:hover{
 	border: 1px solid rgb(143, 148, 193);
@@ -179,6 +180,7 @@ ul{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 13px;
 	width: 75px;
 	height:5vh;
 }
@@ -191,6 +193,34 @@ ul{
 		text-decoration: none;
 		text-transform: uppercase;
 		color: #fff;
+}
+		/*logout_but*/
+
+.log_out{
+	padding:5px 6px;
+	margin-left: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-right: 30px;
+	background-color: rgb(29, 74, 209);
+	border-radius:15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 13px;
+	width: 75px;
+	height:5vh;
+}
+
+.log_out:hover{
+	background-color:rgb(26, 14, 160);
+	color:white;
+}
+.log_out{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
 }
 
                /*navbar*/

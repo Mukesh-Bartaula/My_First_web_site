@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +28,7 @@
 				</div>
 				<div class="login_body">
 
-					<input style="margin: 20px 0px; " type="text" name="username" id="username" placeholder="Enter Username" >
+					<input style="margin: 20px 0px; " type="text" name="username" id="username" placeholder="Enter Username">
 
 
 
@@ -33,9 +36,14 @@
 						<span style="font-size: 24px; background-color: white; position: absolute;margin-top: 3px;
 						 margin-left: 235px;">
 								<hr style="width: 1px; height: 30px; display: inline"><i class="far fa-eye-slash" onclick="showPassword()"></i></span>
-						<input type="password" name="password" id="password" placeholder="Enter Password">
+						<input type="password" name="password" id="password" placeholder="Enter Password" >
 						<div id="password-error"></div>
 					</div>
+
+                    <span style="font-size: 17px; font-weight: bold; margin-top: 15px; display: inline-block">
+                        <input type="checkbox" name="remember_me" value="1" >
+                        Remember me
+                    </span>
 
 					<div style="text-align: center;">
 						<button class="button" name="login_but" onclick="checkValidation()">Login</button>
@@ -55,6 +63,11 @@
 		</div>
 	</div>
 </form>
+<?php
+    echo $_SESSION['username'];
+    echo $_SESSION['password'];
+?>
+?>
 <script src="./script.js"></script>
 </body>
 </html>

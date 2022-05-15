@@ -10,25 +10,25 @@
 <body>
 	<div class="headbar">
   	<div class="logo">
-			<a href="./index.html"><img src="./img/logo.png"></a>
+			<a href="homepage.php"><img src="./img/logo.png"></a>
 		</div>
 		<div class="login">
-			<a href="./logIn_page.html" class="log_in">log in</a>
+			<a href="logIn_page.php" class="log_in">log in</a>
 		</div>
   </div>
   <div class="navbar">
     <ul>
       <li> 
-        <a href="./index.html" class="nav_but">  
+        <a href="homepage.php" class="nav_but">
           <i class="fa fa-home" aria-hidden="true" class="home_icon"></i>
             <span class="home-text"> HOME </span>
         </a>
       </li>
       <li><a href="#" class="nav_but">FACULTY</a></li>
-      <li><a href="./form.html" class="nav_but">ADMISSION</a></li>
-      <li><a href="./news.html" class="nav_but active">NEWS & EVENT</a></li>
+      <li><a href="form.php" class="nav_but">ADMISSION</a></li>
+      <li><a href="news.php" class="nav_but active">NEWS & EVENT</a></li>
       <li><a href="./attendenceF/attendance.php" class="nav_but">ATTENDENCE</a></li>
-      <li><a href="./contact.html" class="nav_but">CONTACT</a></li>
+      <li><a href="contact.php" class="nav_but">CONTACT</a></li>
     </ul>
   </div>     
 	<div class="newsDetailContainer">
@@ -65,12 +65,12 @@
               <div class="column_2">
                 <h2>Useful links</h2>
                 <ul>
-                  <li><a href="./index.html"> HOME </a> </li>
+                  <li><a href="homepage.php"> HOME </a> </li>
                   <li><a href="#">FACULTY</a></li>
-                  <li><a href="./form.html">ADMISSION</a></li>
-                  <li><a href="./news.html">NEWS & EVENT</a></li>
+                  <li><a href="form.php">ADMISSION</a></li>
+                  <li><a href="news.php">NEWS & EVENT</a></li>
                   <li><a href="#">PROGRAMMES</a></li>
-                  <li><a href="./contact.html" >CONTACT</a></li>
+                  <li><a href="contact.php" >CONTACT</a></li>
                 </ul>
               </div> <hr>
               <div class="column_3">
