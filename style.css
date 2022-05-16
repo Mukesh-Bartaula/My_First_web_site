@@ -593,7 +593,7 @@ table{
 }
 .contact_form_info_body{
 	height: 500px;
-	width: 500px;
+	width: 600px;
 	padding: 60px 50px;	
 	margin: auto;
 	
@@ -601,9 +601,7 @@ table{
 .contact_form_heading{
 		padding: 10px 10px;
 		padding-top: 30px;
-		padding-left: 100px;
 		background-color: #D8DFE8;
-
 }
 .contact_form_rows input{
 	padding:10px 5px;
@@ -806,7 +804,7 @@ table{
 }
 .att_container .dailyAtt_table{
 	margin: auto;
-	margin-top: 5%;
+	padding-top: 60px;
 }
 .dailyAtt_button button{
 	width: 120px;
@@ -843,16 +841,30 @@ table{
 #att_form{
 	width:80%;
 	padding: 0 30px;
-	display: inline-block
+	display: inline-block;
 }
 #att_view{
-	display: inline;
+	display: inline-block;
 	padding: 10px 20px;
 	margin:5px 30px;
+}
+.view_but{
+	display:inline;
+	padding: 10px 20px;
+}
+.view_but a{
+	height: 100%;
+	width: 100%;
+}
+.Attendance{
+	margin:5px 30px;
+	padding: 10px 20px;
+	align-items: flex-start;
 }
 .addStudent{
 	margin:5px 30px;
 	padding: 10px 20px;
+	align-items: flex-end;
 }
 
 
@@ -872,17 +884,17 @@ table{
 	border: 1px solid black;
 }
 .backbutton{
-	width: 120px;
-	height: 50px;
+
+	text-align: center;
+	display: flex;
+	justify-content: right;
 }
+.
 .backbutton  button{
-	width: 120px;
-	height: 50px;
+	padding: 100px 20px;
 	border-radius: 10px;
 	background-color: lightgray;
-	margin-top: 50%;
-	margin-left: 50%;
-	font-size: 25px;
+	font-size: 20px;
 
 }
 .backbutton button:hover{
@@ -964,11 +976,13 @@ li a{
   		/*att_date*/
 #showdatetable{
 	display: flex;
-	width: 600px;
+	width: 100%;
 	border: none;
 	overflow: hidden;
 	text-align: center;
 	justify-content: center;
+	margin: auto;
+	padding-top: 50px;
 }
 #att_but{
 	padding: 8px 20px;
@@ -982,7 +996,9 @@ li a{
 #dateAtt_body{
 	display: flex;
 	justify-content: center;
-	width: 78%;
+	min-height: 100vh;
+
+	width: 80%;
 	flex-wrap: wrap;
 }
 .att_body{
@@ -994,15 +1010,24 @@ li a{
 	width: 100%;
 	height: 50px;
 	justify-content: space-between;
+
+}
+.Attendance a{
+	height: 100%;
+	width: 100%;
 }
 .Attendance a button{
-	display: inline;
+	display: inline-block;
 	padding: 10px 20px;
 	border-radius: 5px;
 	border: 1px solid black;
 }
+.addStudent a{
+	height: 100%;
+	width: 100%;
+}
 .addStudent a button{
-	display: inline;
+	display: inline-block;
 	padding: 10px 20px;
 	border-radius: 5px;
 	border: 1px solid black;

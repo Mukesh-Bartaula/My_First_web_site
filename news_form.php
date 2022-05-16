@@ -45,14 +45,14 @@
             </p>
         </div>
         <div class="contact_form_info_body">
-            <form action="c_data.php" method="post" enctype="multipart/form-data">
+            <form action="newsDataSendToDb.php" method="get" enctype="multipart/form-data">
                 <table>
                     <tr>
                         <div class="contact_form_rows">
                             <label>
                                 Date:
                             </label><br>
-                            <input type="text" name="contact_form_name"  height="30" placeholder="Sunday,Feb 23,2022">
+                            <input type="text" name="news_date"  height="30" placeholder="Sunday,Feb 23,2022">
                         </div>
                     </tr>
                     <tr>
@@ -60,7 +60,7 @@
                             <label>
                                 Title:
                             </label><br>
-                            <input type="text" name="contact_form_email"  height="30">
+                            <input type="text" name="news_title"  height="30">
                         </div>
                     </tr>
 
@@ -69,7 +69,7 @@
                             <label>
                                 Paragraph:
                             </label><br>
-                            <textarea name="contact_form_mess" rows="10" cols="67"></textarea>
+                            <textarea name="news_paragraph" rows="10" cols="67"></textarea>
                         </div>
                     </tr>
                     <tr>
@@ -77,7 +77,7 @@
                             <label>
                                 photo:
                             </label><br>
-                            <input type="file" name="contact_form_phone_no"  height="30">
+                            <input type="file" name="news_photoURL"  height="30">
                         </div>
                     </tr>
                     <tr>

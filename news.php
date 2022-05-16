@@ -19,7 +19,7 @@ session_start();
             <div class="logo">
                 <a href="homepage.php"><img src="./img/logo.png"></a>
             </div>
-            <?php if(isset($_SESSION['username']) == true){ ?>
+            <?php if(isset($_SESSION['username']) && ($_SESSION['password'])){ ?>
             <div>
                 <a href="logout.php" class="log_out">log out</a>
             </div>
