@@ -241,12 +241,13 @@ ul{
 	display: flex;
 	flex-flow: row;
 	/*height: 10vh;*/
-	padding-left: 60px;
+	padding-left: 20px;
+	flex-wrap: wrap;
 
 }
 .nav_but{
 	display: flex;
-	padding:24px 20px;
+	padding:20px 16px;
 	text-decoration: none;
 	text-align: center;	
 	color: white;
@@ -273,9 +274,10 @@ li a{
 }
 	
 .navbar > ul > li:hover{
+
 	background-color: rgb(26, 14, 160);
 	font-weight: bolder;
-	box-shadow: 5px 2px 10px 1px rgba(0, 0, 0, 1);
+	box-shadow: 2px 2px 10px  rgba(0, 0, 0, 1);
 }
 
 .home-text {
@@ -285,21 +287,38 @@ li a{
 .home_icon{
 	margin-left: 20px;
 }
+
    		/*dropdown-menu         */
 
-/*.faculty_dropdown-menu{*/
-/*	display: none;*/
-/*	*/
-/*}*/
-/*.navbar ul li:hover .faculty_dropdown-menu ul{*/
-/*	display: block;*/
-/*	position: absolute;*/
-/*	background-color: blue;*/
-/*	color: white;*/
-/*	margin-top: 50px;*/
-/*	visibility: visible;*/
+.faculty_dropdown-menu{
+	display: none;
 
-/*}*/
+}
+.navbar ul li:hover .faculty_dropdown-menu{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	background-color: blue;
+	color: white;
+	visibility: visible;
+	box-shadow: 2px 2px 10px  rgba(0, 0, 0, 1);
+
+}
+.navbar ul li:hover .faculty_dropdown-menu a{
+	width: 120px;
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 0 15px;
+}
+.navbar ul li:hover .faculty_dropdown-menu a:hover{
+	background-color:whitesmoke;
+	border: 1px solid #B2ABAB;
+	color: blue;
+	text-decoration: underline;
+}
+
            /*body*/
 /*.container{
 	background-image: url(./img/drone_short.jpg);
@@ -578,7 +597,8 @@ table{
 }
 .contact_form_body{
 	margin: auto; 	
-	height: 800px;
+	min-height: 800px;
+	max-height: 100%;
 	width: 700px;
 	box-sizing: border-box;
 	margin-top: 40px;
@@ -592,9 +612,10 @@ table{
 	
 }
 .contact_form_info_body{
-	height: 500px;
+	min-height: 600px;
+	max-height: 800px;
 	width: 600px;
-	padding: 60px 50px;	
+	padding: 10px 30px;
 	margin: auto;
 	
 }
@@ -603,18 +624,18 @@ table{
 		padding-top: 30px;
 		background-color: #D8DFE8;
 }
-.contact_form_rows input{
+.contact_form_rows input, select{
 	padding:10px 5px;
 	margin-top: 10px;
 	margin-bottom: 20px;
-	font-size: 25px;
+	font-size: 16px;
 }
 
 .contact_form_rows input[type='number'], input[type='text'], input[type='email']{
 	width: 100%;
 }
 .contact_form_rows label{
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bolder;
 }
 .contact_form_rows button{
@@ -642,52 +663,70 @@ table{
 .newsContainer{
 	min-height: 100vh;
 	max-height: 100%;
+	display: flex;
 }
 .newsBody{
-	/*display: flex;*/
-	padding: 50px 130px;
+	display: flex;
+	width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-between;
 
 }
+.news_content_body{
+	width: 80%;
+	display: inline-block;
+	padding:15px 0;
+}
 .card_container{
 
 	display: inline-block;
-	height: 350px;
-	width: 300px;
+	height: 300px;
+	width: 250px;
 	border: 1px solid gray;
 	border-radius: 10px;
-	margin: 25px;
+	margin:25px 35px;
 	background-color: dodgerblue;
 	overflow: hidden;
 
 
+}
+.newsdate{
+	font-size: 15px;
+	display: flex;
+	margin-top: 128px;
+	padding: 2px 5px;
+	position: absolute;
+	flex-wrap: wrap;
+	background-color: white
 }
 .card_container:hover{
 	box-shadow: 5px 5px 20px blue;
 }
 .card_container .newsParagraph .heading{
 	height: 30px;
+	display: inline-block;
 	text-align: center;
-	padding: 5px;
+	padding:0px 5px;
 	overflow: hidden;
 
 }
+.card_container .newsParagraph .heading h3{
+	display: inline-block;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 250px;
+
+}
+
 .card_container img{
-	height: 200px;
+	height: 150px;
 	width: 100%;
 	border: 1px solid gray;
 }
 .card_container hr{
 	margin: 10px 0;
-
-}
-.card_container .newsParagraph{
-	padding: 10px 10px;
-	text-align: justify;
-	overflow: hidden;
-	height: 110px;
-	line-height: 1.2;
 
 }
 
@@ -712,6 +751,21 @@ table{
 	font-weight: bolder;
 	letter-spacing:  2px;
 }
+.card_container .newsParagraph{
+	padding: 10px 10px;
+	text-align: justify;
+	height: 134px;
+	line-height: 1.2;
+}
+.card_container .newsParagraph p{
+	padding: 5px 10px;
+	height: 80px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
 .newsDetailParagraph{
 	margin: 20px;
 	display: flex;
@@ -728,18 +782,20 @@ table{
 .newsDetailParagraph p{
 	line-height: 22px;
 	text-indent: 20px;
+
 }
 		/*attedance*/
 
 .attContainer{
 	min-height: 100vh;
 	max-height: 100%;
-	margin: 0 100px;
+
 }
 .att_Body{
 	flex-wrap: wrap;
-	padding: 50px 130px;
+	width: 90%;
 	flex-wrap: wrap;
+	margin: auto;
 	min-height: 100vh;
 	justify-content: space-between;
 
@@ -787,7 +843,27 @@ table{
 	overflow: hidden;
 	text-align: center;
 }
+ .tableSn, .tableBtn, .nameDate{
+	padding: 0 80px;
+}
+.nameTr{
+	width: 100%;
+}
+.table{
+	border: 1px solid red;
+	border-collapse: collapse;
+	padding: 5px;
+	width: 900px;
+	display: flex;
+	justify-content: space-between
 
+}
+.table tr:nth-child(odd){
+	background-color: #Fff;
+}
+.table tr{
+	width: 900px;
+}
 	/*daillyatt*/
 
 .att_container{
@@ -936,11 +1012,12 @@ table{
 .vnavbar ul li{
 	width: 100%;
 }
-.att_container .vnav_but{
+ .vnav_but{
 	display: block;
-	padding:20px 0px;
+	padding:12px 0px;
 	text-decoration: none;
-	text-align: center;
+	text-align: left;
+	 padding-left: 30px;
 	color: white;
 	width: 100%;
 }
@@ -951,7 +1028,7 @@ li a{
 	font-weight: bolder;
 }
 
-.vnavbar > ul > li > a:active{
+.vnavbar  ul  li  a:active{
 	background-color: rgb(18, 5, 66);
 
 }
@@ -962,6 +1039,7 @@ li a{
 .vnavbar > ul > li:hover{
 	background-color: rgb(26, 14, 160);
 	font-weight: bolder;
+	text-decoration: underline;
 	box-shadow: 5px 2px 10px  1px rgba(0, 0, 0, 0.41);
 }
 
@@ -976,13 +1054,10 @@ li a{
   		/*att_date*/
 #showdatetable{
 	display: flex;
-	width: 100%;
-	border: none;
 	overflow: hidden;
 	text-align: center;
 	justify-content: center;
-	margin: auto;
-	padding-top: 50px;
+	margin-top: 50px;
 }
 #att_but{
 	padding: 8px 20px;
@@ -1031,4 +1106,48 @@ li a{
 	padding: 10px 20px;
 	border-radius: 5px;
 	border: 1px solid black;
+}
+
+/*facultyPage*/
+
+.facultyDetailContainer{
+	width: 800px;
+	padding: 50px 0;
+	background-color: #f9f7f1;
+	color: #2f2f2f;
+	margin: auto;
+	text-align: justify;
+}
+.newTitle h1{
+	line-height: 100px;
+	color: #2f2f2f;
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing:  1px;
+}
+.date{
+	padding: 2px 50px;
+	line-height: 30px;
+	font-weight: bolder;
+	letter-spacing:  2px;
+}
+
+
+.facultyDetailParagraph{
+	margin: 20px;
+
+	letter-spacing: 1px;
+}
+.facultyDetailParagraph img {
+	float: left;
+	width: 350px;
+	height: auto;
+	margin: 20px;
+	height: 200px;
+
+}
+.facultyDetailParagraph p{
+	line-height: 20px;
+	text-indent: 10px;
+
 }

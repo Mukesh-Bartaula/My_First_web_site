@@ -14,9 +14,8 @@ session_destroy();
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
-<span style="z-index: 2;color: red; margin-top: 100px;margin-left: 550px; font-size: 20px; position: absolute; top: 20px "> You have succesfully logout.</span>
+<span style="z-index: 2;color: red; margin-top: 80px;margin-left: 550px; font-size: 20px; position: absolute; top: 20px "> You have succesfully logout.</span>
 <form method="post" action="logIn_validation.php">
-
     <div class="login_page_container">
 
         <div class="login_container">
@@ -32,9 +31,7 @@ session_destroy();
                 </div>
                 <div class="login_body">
 
-                    <input style="margin: 20px 0px; " type="text" name="username" id="username" placeholder="Enter Username"
-                           value="<?php if(isset($_SESSION['username'])){echo $_SESSION['username']; }?>"
-                    >
+                    <input style="margin: 20px 0px; " type="text" name="username" id="username" placeholder="Enter Username">
 
 
 
@@ -42,9 +39,7 @@ session_destroy();
 						<span style="font-size: 24px; background-color: white; position: absolute;margin-top: 3px;
 						 margin-left: 235px;">
 								<hr style="width: 1px; height: 30px; display: inline"><i class="far fa-eye-slash" onclick="showPassword()"></i></span>
-                        <input type="password" name="password" id="password" placeholder="Enter Password"
-                               value="<?php if(isset($_SESSION['password'])){echo $_SESSION['password']; }?>"
-                        >
+                        <input type="password" name="password" id="password" placeholder="Enter Password" >
                         <div id="password-error"></div>
                     </div>
 
@@ -72,8 +67,8 @@ session_destroy();
     </div>
 </form>
 <?php
-echo $_SESSION['username'];
-echo $_SESSION['password'];
+echo $_POST['username'];
+echo $_POST['password'];
 ?>
 ?>
 <script src="./script.js"></script>

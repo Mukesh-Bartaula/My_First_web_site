@@ -48,14 +48,14 @@ session_start();
 					<div style="text-align: center;">
 						<button class="button" name="login_but" onclick="checkValidation()">Login</button>
 					</div>
-					<div class="register">
-						<p>Register now?
-							<a href="register.html" id="login_reg_click">
-								<span >Click Here</span>
-							</a>
-
-						</p>
-					</div>
+<!--					<div class="register">-->
+<!--						<p>Register now?-->
+<!--							<a href="register.html" id="login_reg_click">-->
+<!--								<span >Click Here</span>-->
+<!--							</a>-->
+<!---->
+<!--						</p>-->
+<!--					</div>-->
 				</div>
 			</div>
 
@@ -64,8 +64,8 @@ session_start();
 	</div>
 </form>
 <?php
-    echo $_SESSION['username'];
-    echo $_SESSION['password'];
+    echo $_POST['username'];
+    echo $_POST['password'];
 ?>
 ?>
 <script src="./script.js"></script>
